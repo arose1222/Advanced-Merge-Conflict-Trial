@@ -1,0 +1,16 @@
+trigger CSuiteContactTrigger on Contact (after insert) {
+    
+	ContactTriggerHandler con = new ContactTriggerHandler();
+    
+    if ( Trigger.isInsert && Trigger.isAfter ) {
+        con.afterInsert( Trigger.new );
+    }
+    
+    if ( Trigger.isInsert && Trigger.isBefore ) {
+        
+    }
+    
+    if ( Trigger.isUpdate && Trigger.isAfter ) {
+        
+    }
+}
