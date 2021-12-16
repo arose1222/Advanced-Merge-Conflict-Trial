@@ -1,0 +1,7 @@
+public class ContactTriggerHandler {
+	
+    public void afterInsert(List<Contact> cons) {
+        
+        CSuiteLogic.createCSuiteContact(cons);   
+    }   
+}
